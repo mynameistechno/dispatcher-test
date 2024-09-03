@@ -22,5 +22,5 @@ jobs:
         uses: craigez/github-mirror-action@7603e4304655a977c04b23eb1aa71aa65a5a7aa8
         with:
           origin: 'https://github.com/craigez/foo'
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.WORKFLOW_TOKEN }}
           TARGET_REFSPACE: 'refs/heads/*:refs/heads/mirror/*'
