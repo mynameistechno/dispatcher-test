@@ -19,4 +19,4 @@ jobs:
         with:
           origin: 'https://github.com/craigez/foo'
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          TARGET_REFSPACE: 'refs/heads/mirror/*'
+          TARGET_REFSPACE: 'refs/heads/*:refs/heads/mirror/*'
