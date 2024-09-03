@@ -15,7 +15,7 @@ jobs:
     steps:
       - name: mirror
         id: mirror
-        uses: craigez/github-mirror-action@ede8a220
+        uses: craigez/github-mirror-action@ede8a220358f7e82b8fdec7c30223b52a050a475
         with:
           origin: 'https://github.com/craigez/foo'
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
