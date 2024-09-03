@@ -8,6 +8,9 @@ on:
     - cron: '15 * * * *'
   workflow_dispatch:
 
+permissions:
+  actions: write
+
 jobs:
   mirror:
     runs-on: ubuntu-latest
