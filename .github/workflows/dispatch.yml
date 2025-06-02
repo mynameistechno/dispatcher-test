@@ -1,0 +1,7 @@
+- name: Repository Dispatch Test
+  uses: peter-evans/repository-dispatch@v3
+  with:
+    token: ${{ secrets.PAT }}
+    repository: craigez/foo
+    event-type: my-test-event
+    client-payload: '{"ref": "${{ github.ref }}", "sha": "${{ github.sha }}"}'
