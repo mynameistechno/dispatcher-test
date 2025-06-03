@@ -13,7 +13,7 @@ jobs:
       uses: benc-uk/workflow-dispatch@v1
       with:
         workflow: Receive
-        repo: craigez/foo
+        repo: mynameistechno/receiver-test
         inputs: '{"ref": "${{ github.ref }}", "sha": "${{ github.sha }}"}'
         # Required when using the `repo` option. Either a PAT or a token generated from the GitHub app or CLI
         token: "${{ secrets.PAT }}"
