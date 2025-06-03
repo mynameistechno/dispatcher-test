@@ -12,7 +12,7 @@ jobs:
     - name: Invoke workflow in another repo with inputs
       uses: benc-uk/workflow-dispatch@v1
       with:
-        workflow: receive.yaml
+        workflow: Receive
         repo: craigez/foo
         inputs: '{"ref": "${{ github.ref }}", "sha": "${{ github.sha }}"}'
         # Required when using the `repo` option. Either a PAT or a token generated from the GitHub app or CLI
